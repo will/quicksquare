@@ -1,4 +1,9 @@
-body { background-color: black; }
+body {
+  background-color: black;
+  color: white;
+  text-shadow: gray -1px -1px 1px;
+  font-family: Helvetica, sans-serif;
+}
 
 .content {
   background-color: gray;
@@ -9,7 +14,13 @@ body { background-color: black; }
 .topbar {
   width: 640px;
   height: 96px;
+  line-height: 96px;
   background: gray url('img/topbar.png') no-repeat top left;
+}
+
+.topbar .title {
+  text-align: center;
+  font-size: 2em;
 }
 
 .note {
@@ -27,16 +38,15 @@ body { background-color: black; }
 .keys .keyrow { display: table-row; }
 
 .keys a {
-  display: table-cell;
   color: white;
+  display: table-cell;
   font-size: 2.5em;
   text-decoration: none;
   width: 213px;
   height: 108px;
   line-height: 108px;
   text-align: center;
-  text-shadow: gray -1px -1px 1px;
 
-  border: 1px solid black;
+  border: 1px solid rgba(0,0,0,0.5);
 
 }
