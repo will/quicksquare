@@ -1,0 +1,25 @@
+body { background-color: black; }
+
+.content {
+  background-color: gray;
+  width: 640px;
+  margin: auto;
+}
+
+.topbar {
+  width: 640px;
+  height: 96px;
+  background: gray url('img/topbar.png') no-repeat top left;
+}
+
+.note {
+  width: 640px;
+  height: 392px;
+  background: gray url('img/notepaper.png') no-repeat top left;
+}
+
+.keys {
+  width: 640px;
+  height: 432px;
+  background: gray url('img/keys.png') no-repeat top left;
+}
