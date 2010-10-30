@@ -23,3 +23,20 @@ body { background-color: black; }
   height: 432px;
   background: gray url('img/keys.png') no-repeat top left;
 }
+
+.keys .keyrow { display: table-row; }
+
+.keys a {
+  display: table-cell;
+  color: white;
+  font-size: 2.5em;
+  text-decoration: none;
+  width: 213px;
+  height: 108px;
+  line-height: 108px;
+  text-align: center;
+  text-shadow: gray -1px -1px 1px;
+
+  border: 1px solid black;
+
+}
