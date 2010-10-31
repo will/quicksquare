@@ -31,7 +31,7 @@ body {
 
 .keys {
   width: 640px;
-  height: 432px;
+  height: 408px;
   background: gray url('img/keys.png') no-repeat top left;
 }
 
@@ -43,8 +43,8 @@ body {
   font-size: 2.5em;
   text-decoration: none;
   width: 213px;
-  height: 108px;
-  line-height: 108px;
+  height: 102px;
+  line-height: 102px;
   text-align: center;
 
   border: 1px solid rgba(0,0,0,0.5);
