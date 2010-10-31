@@ -27,6 +27,8 @@ body {
   width: 640px;
   height: 392px;
   background: gray url('img/notepaper.png') no-repeat top left;
+  color: black;
+  font-size: 4em;
 }
 
 .keys {
