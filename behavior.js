@@ -13,8 +13,7 @@ function press(key) {
   input.push(key);
 }
 
-$(function() {
-  $('.keyrow a').click(function(){
+var pressEvent = function(){
     var special = $(this).attr('data-special');
 
     if (special === '00') {
@@ -28,5 +27,9 @@ $(function() {
 
     setPrice();
     return false;
-  });
+  };
+$(function() {
+
+  $('.keyrow a').click(pressEvent);
+  $('.keyrow a').bind('touchstart', pressEvent);
 });

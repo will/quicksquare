@@ -3,6 +3,7 @@ body {
   color: white;
   text-shadow: gray -1px -1px 1px;
   font-family: Helvetica, sans-serif;
+  padding-top: 32px;
 }
 
 .content {
@@ -33,7 +34,7 @@ body {
 
 .keys {
   width: 640px;
-  height: 408px;
+  height: 432px;
   background: gray url('img/keys.png') no-repeat top left;
 }
 
@@ -45,8 +46,8 @@ body {
   font-size: 2.5em;
   text-decoration: none;
   width: 213px;
-  height: 102px;
-  line-height: 102px;
+  height: 108px;
+  line-height: 108px;
   text-align: center;
 
   border: 1px solid rgba(0,0,0,0.5);
