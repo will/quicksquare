@@ -29,7 +29,18 @@ body {
   height: 392px;
   background: gray url('img/notepaper.png') no-repeat top left;
   color: black;
-  font-size: 4em;
+  font-size: 5em;
+}
+
+.note>div {
+  padding: 10px;
+  height: 110px;
+  line-height: 110px;
+}
+.note>div:before { content: "$"; }
+
+.charge {
+  border-top: 1px solid black;
 }
 
 .keys {

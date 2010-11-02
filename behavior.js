@@ -19,27 +19,24 @@ function priceWithFee(price, rate) {
   return ((price * rate) + 0.15).toFixed(2);
 }
 
-function press(key) {
-  input.push(key);
-}
+var press = function(){
+  var special = $(this).attr('data-special');
 
-var pressEvent = function(){
-    var special = $(this).attr('data-special');
+  if (special === '00') {
+    input.push('0');
+    input.push('0');
+  } else if (special === 'del') {
+    input.pop();
+  } else {
+    input.push( $(this).html() );
+  }
 
-    if (special === '00') {
-      press('0');
-      press('0');
-    } else if (special === 'del') {
-      input.pop();
-    } else {
-      press( $(this).html() );
-    }
+  setPrice();
+  return false;
+};
 
-    setPrice();
-    return false;
-  };
 $(function() {
-  $('.keyrow a').click(pressEvent);
-  $('.keyrow a').bind('touchstart', pressEvent);
+  $('.keyrow a').click(press);
+  $('.keyrow a').bind('touchstart', press);
   setPrice();
 });
