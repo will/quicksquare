@@ -4,9 +4,11 @@ function setPrice() {
   var inputPrice = inputAsNumber();
   var swipePrice = priceWithFee(inputPrice, 1.0275);
   var typedPrice = priceWithFee(inputPrice, 1.0350);
-  $('.input').html(inputPrice);
-  $('.charge.swipe').html(swipePrice);
-  $('.charge.type').html(typedPrice);
+  $('.input .number').html(inputPrice);
+  $('.charge.swipe .number').html(swipePrice);
+  $('.charge.swipe a').attr('href', squareURL(swipePrice));
+  $('.charge.type .number').html(typedPrice);
+  $('.charge.type a').attr('href', squareURL(typedPrice));
 };
 
 function inputAsNumber() {
@@ -17,6 +19,10 @@ function inputAsNumber() {
 
 function priceWithFee(price, rate) {
   return ((price * rate) + 0.15).toFixed(2);
+}
+
+function squareURL(price) {
+  return "square://pay?currency=USD&amount="+price
 }
 
 var press = function(){
