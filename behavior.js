@@ -1,12 +1,22 @@
 var input = [];
 
 function setPrice() {
-  $('.input').html( inputAsNumber() );
+  var inputPrice = inputAsNumber();
+  var swipePrice = priceWithFee(inputPrice, 1.0275);
+  var typedPrice = priceWithFee(inputPrice, 1.0350);
+  $('.input').html(inputPrice);
+  $('.charge.swipe').html(swipePrice);
+  $('.charge.type').html(typedPrice);
 };
 
 function inputAsNumber() {
   var combined = _.reduce(input, function(memo, n) { return memo + n.toString(); }, '');
-  return parseInt(combined, 10);
+  combined = (combined === '' ? '0' : combined);
+  return (parseInt(combined, 10)/100).toFixed(2);
+}
+
+function priceWithFee(price, rate) {
+  return ((price * rate) + 0.15).toFixed(2);
 }
 
 function press(key) {
@@ -29,7 +39,7 @@ var pressEvent = function(){
     return false;
   };
 $(function() {
-
   $('.keyrow a').click(pressEvent);
   $('.keyrow a').bind('touchstart', pressEvent);
+  setPrice();
 });
