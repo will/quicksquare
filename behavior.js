@@ -2,8 +2,8 @@ var input = [];
 
 function setPrice() {
   var inputPrice = inputAsNumber();
-  var swipePrice = priceWithFee(inputPrice, 1.0275);
-  var typedPrice = priceWithFee(inputPrice, 1.0350);
+  var swipePrice = priceWithFee(inputPrice, 0.0275);
+  var typedPrice = priceWithFee(inputPrice, 0.0350);
   $('.input .number').html(inputPrice);
   $('.charge.swipe .number').html(swipePrice);
   $('.charge.swipe a').attr('href', squareURL(swipePrice));
@@ -18,7 +18,7 @@ function inputAsNumber() {
 }
 
 function priceWithFee(price, rate) {
-  return ((price * rate) + 0.15).toFixed(2);
+  return ((price / (1.0 - rate)) + 0.15).toFixed(2);
 }
 
 function squareURL(price) {
