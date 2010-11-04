@@ -25,16 +25,22 @@ function squareURL(price) {
   return "square://pay?currency=USD&amount="+price
 }
 
+function addDigit(digit) {
+  if ( input.length < 8 ) {
+    input.push(digit);
+  }
+}
+
 var press = function(){
   var special = $(this).attr('data-special');
 
   if (special === '00') {
-    input.push('0');
-    input.push('0');
+    addDigit('0');
+    addDigit('0');
   } else if (special === 'del') {
     input.pop();
   } else {
-    input.push( $(this).html() );
+    addDigit( $(this).html() );
   }
 
   setPrice();
