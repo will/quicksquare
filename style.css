@@ -54,9 +54,9 @@ section {
 
 .topbar a {
   position: absolute;
-  right: 24px;
-  top: 24px;
-  font-size: 1.2em;
+  right: 20px;
+  top: 20px;
+  font-size: 1.8em;
   color: white;
   text-shadow: black 0px 1px 0px;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(135, 148, 203, 0.847656)), color-stop(0.5, rgba(34, 56, 159, 0.746094)), color-stop(0.5, rgba(0, 27, 145, 0.746094)), to(rgba(2, 59, 152, 0.648438)));

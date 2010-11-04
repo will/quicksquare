@@ -54,5 +54,6 @@ $(function() {
 
   $('.topbar a').click(function() {
     $('section').toggleClass('rotate');
+    return false;
   });
 });
