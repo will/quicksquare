@@ -51,4 +51,8 @@ $(function() {
   $('.keyrow a').click(press);
   $('.keyrow a').bind('touchstart', press);
   setPrice();
+
+  $('.topbar a').click(function() {
+    $('section').toggleClass('rotate');
+  });
 });

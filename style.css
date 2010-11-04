@@ -9,6 +9,34 @@ body {
   background-color: gray;
   width: 640px;
   margin: auto;
+  -webkit-perspective: 1000;
+}
+
+section {
+  position: relative;
+  width: 640px;
+  height: 824px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 1.0s linear;
+}
+
+.rotate {
+  -webkit-transform: rotateY(180deg);
+}
+
+.face.back {
+  -webkit-transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+  width: 640px;
+  height: 824px;
+  background-color: red;
+}
+
+.face {
+  position: absolute;
+  width: 640px;
+  height: 824px;
+  -webkit-backface-visibility: hidden
 }
 
 .topbar {
