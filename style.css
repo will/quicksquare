@@ -29,7 +29,6 @@ section {
   -webkit-box-sizing: border-box;
   width: 640px;
   height: 824px;
-  background: gray url('img/background.png') repeat top left;
 }
 
 .face {
@@ -65,6 +64,17 @@ section {
   border-radius: 10px;
   padding: 10px;
   text-decoration: none;
+}
+
+.about {
+  color: black;
+  font-size: 1.2em;
+  background: gray url('img/background.png') repeat top left;
+  padding: 15px;
+}
+
+.about a {
+  color: blue;
 }
 
 .note {
