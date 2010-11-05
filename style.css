@@ -29,7 +29,7 @@ section {
   -webkit-box-sizing: border-box;
   width: 640px;
   height: 824px;
-  background-color: red;
+  background: gray url('img/background.png') repeat top left;
 }
 
 .face {
@@ -70,7 +70,7 @@ section {
 .note {
   width: 640px;
   height: 392px;
-  background: gray url('img/notepaper.png') no-repeat top left;
+  background: gray url('img/background.png') repeat top left;
 }
 
 .note>div {
@@ -111,7 +111,7 @@ section {
 .keys {
   width: 640px;
   height: 432px;
-  background: gray url('img/keys.png') no-repeat top left;
+  background: gray url('img/keys.png') repeat top left;
 }
 
 .keys .keyrow { display: table-row; }
