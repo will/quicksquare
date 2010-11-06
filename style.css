@@ -66,6 +66,44 @@ section {
   text-decoration: none;
 }
 
+.usagewrapper {
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hide {
+  display: none
+}
+
+.rotate .usagewrapper {
+  display: none;
+}
+
+.usage {
+  width: 410px;
+  padding: 20px;
+  margin: auto;
+  font-size: 2em;
+}
+
+.usage h3 span {
+  border: 1px solid white;
+  white-space: nowrap;
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.usage img {
+  display: block;
+  margin: auto;
+}
+
+
+
 .about {
   color: black;
   font-size: 2em;

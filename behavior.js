@@ -47,7 +47,14 @@ var press = function(){
   return false;
 };
 
+function checkStandalone() {
+  if (window.navigator.standalone === false) {
+    $('.usagewrapper').removeClass('hide');
+  }
+}
+
 $(function() {
+  checkStandalone();
   $('.keyrow a').click(press);
   $('.keyrow a').bind('touchstart', press);
   setPrice();
