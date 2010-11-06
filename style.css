@@ -77,6 +77,12 @@ section {
   color: blue;
 }
 
+.about img {
+  position: absolute;
+  top: 64px;
+  right: 56px;
+}
+
 .note {
   width: 640px;
   height: 392px;
